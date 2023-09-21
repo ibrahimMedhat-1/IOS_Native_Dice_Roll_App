@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		267DD5002ABB14AB003C3466 /* Dice_Roll_AppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 267DD4FF2ABB14AB003C3466 /* Dice_Roll_AppApp.swift */; };
-		267DD5022ABB14AB003C3466 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 267DD5012ABB14AB003C3466 /* ContentView.swift */; };
+		267DD5022ABB14AB003C3466 /* HomeScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 267DD5012ABB14AB003C3466 /* HomeScreen.swift */; };
 		267DD5042ABB14AF003C3466 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 267DD5032ABB14AF003C3466 /* Assets.xcassets */; };
 		267DD5082ABB14AF003C3466 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 267DD5072ABB14AF003C3466 /* Preview Assets.xcassets */; };
 		267DD5122ABB14B0003C3466 /* Dice_Roll_AppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 267DD5112ABB14B0003C3466 /* Dice_Roll_AppTests.swift */; };
@@ -36,7 +36,7 @@
 /* Begin PBXFileReference section */
 		267DD4FC2ABB14AB003C3466 /* Dice_Roll_App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Dice_Roll_App.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		267DD4FF2ABB14AB003C3466 /* Dice_Roll_AppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dice_Roll_AppApp.swift; sourceTree = "<group>"; };
-		267DD5012ABB14AB003C3466 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		267DD5012ABB14AB003C3466 /* HomeScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreen.swift; sourceTree = "<group>"; };
 		267DD5032ABB14AF003C3466 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		267DD5052ABB14AF003C3466 /* Dice_Roll_App.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Dice_Roll_App.entitlements; sourceTree = "<group>"; };
 		267DD5072ABB14AF003C3466 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
@@ -95,8 +95,8 @@
 		267DD4FE2ABB14AB003C3466 /* Dice_Roll_App */ = {
 			isa = PBXGroup;
 			children = (
+				267DD5012ABB14AB003C3466 /* HomeScreen.swift */,
 				267DD4FF2ABB14AB003C3466 /* Dice_Roll_AppApp.swift */,
-				267DD5012ABB14AB003C3466 /* ContentView.swift */,
 				267DD5032ABB14AF003C3466 /* Assets.xcassets */,
 				267DD5052ABB14AF003C3466 /* Dice_Roll_App.entitlements */,
 				267DD5062ABB14AF003C3466 /* Preview Content */,
@@ -259,7 +259,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				267DD5022ABB14AB003C3466 /* ContentView.swift in Sources */,
+				267DD5022ABB14AB003C3466 /* HomeScreen.swift in Sources */,
 				267DD5002ABB14AB003C3466 /* Dice_Roll_AppApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

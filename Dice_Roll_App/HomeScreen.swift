@@ -6,9 +6,13 @@
 //
 
 import SwiftUI
-
 struct ContentView: View {
+    let diceList = ["DiceOne","DiceTwo","DiceThree","DiceFour","DiceFive","DiceSix"]
+    
+    @State var firstDice : String = "DiceOne"
+    @State var secondDice : String = "DiceOne"
     var body: some View {
+        
         ZStack{
             Image("GreenBackground")
                 .resizable()
@@ -19,27 +23,42 @@ struct ContentView: View {
                     .resizable()
                     .padding()
                     .frame(width: 260, height: 200)
-
+                
                 Spacer()
                 HStack{
                     Spacer()
-                    Image("DiceOne").padding()
+                    Image(firstDice).padding()
                     Spacer()
-                    Image("DiceSix").padding()
+                        .accessibilityIdentifier("imag1")
+                    Image(secondDice).padding()
                     Spacer()
-
+                    
                 }
                 Spacer().frame(height: 50)
-                Button(action: /*@START_MENU_TOKEN@*/{}/*@END_MENU_TOKEN@*/, label: {
-                    Text("Roll").foregroundColor(.white).font(.largeTitle)
+                Button(action: {
+                    firstDice = diceList[randomDice()]
+                    secondDice = diceList[randomDice()]
+
+                }, label: {
+                    Text("Roll")
+                        .padding()
+                        .background(.redColorDice)
+                        .foregroundColor(.white)
+                        .font(.largeTitle)
                 })
                 Spacer()
             }.frame(maxWidth: .infinity,maxHeight: .infinity,alignment: .top)
-               
+            
         }
-           
-     }
+        
+    }
+    func randomDice()->Int{
+        let randomNo:Int = Int.random(in: (0...5));
+        return randomNo;
+    }
+
 }
+
 
 #Preview {
     ContentView()
